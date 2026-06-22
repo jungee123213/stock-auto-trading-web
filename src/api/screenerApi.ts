@@ -19,7 +19,7 @@ export const getKrScreener = async (): Promise<ScreenerResult[]> => {
   return response.data.result;
 };
 
-// 스크리너 실행
-export const runScreener = async (market: string): Promise<void> => {
+// 스크리너 실행 (US는 백엔드에서 NASDAQ+NYSE 처리)
+export const runScreener = async (market: 'US' | 'KR'): Promise<void> => {
   await axios.post(`${BASE_URL}/api/screener/run/${market}`);
 };
