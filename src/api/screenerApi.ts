@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { ApiResponse, ScreenerResult } from '../types/screener';
 
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 // 미장 스크리너 결과 조회
 export const getUsScreener = async (): Promise<ScreenerResult[]> => {

@@ -1,0 +1,189 @@
+.m-screener {
+  padding: 16px;
+  max-width: 100%;
+}
+
+/* 탭 — 가로 꽉 차게 */
+.m-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.m-tab {
+  flex: 1;
+  padding: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.m-tab--active {
+  background: #1a1a2e;
+  color: #fff;
+  border-color: #1a1a2e;
+}
+
+.m-title {
+  margin: 0 0 2px;
+  font-size: 20px;
+}
+
+.m-subtitle {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: #888;
+}
+
+/* 실행 버튼 — 풀폭, 터치 친화적 높이 */
+.m-run-btn {
+  width: 100%;
+  padding: 14px 0;
+  margin-bottom: 16px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.m-run-btn:disabled {
+  opacity: 0.6;
+}
+
+.m-loading {
+  color: #888;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.m-error-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+  background: #fff0f1;
+  border: 1px solid #ffd0d4;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.m-error {
+  color: #ff1744;
+  margin: 0;
+  text-align: center;
+}
+
+.m-retry-btn {
+  padding: 10px 20px;
+  border: 1px solid #ff1744;
+  border-radius: 8px;
+  background: #fff;
+  color: #ff1744;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.m-empty {
+  color: #888;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+/* 카드 리스트 */
+.m-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.m-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.m-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.m-card__name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.m-card__ticker {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.m-card__company {
+  font-size: 13px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.m-badge {
+  flex-shrink: 0;
+  font-size: 11px;
+  color: #555;
+  background: #f1f1f4;
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+.m-card__price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.m-card__metrics {
+  display: flex;
+  gap: 12px;
+}
+
+.m-metric {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.m-metric__label {
+  font-size: 12px;
+  color: #888;
+}
+
+.m-metric__value {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.m-pos {
+  color: #00c853;
+}
+
+.m-neg {
+  color: #ff1744;
+}
